@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #1a1a1a;
+}
+.divpai{
+    margin: auto;
+    max-width: 1050px;
+    min-width: 320px;
+    top: 20vh;
+    height: 400px;
+}
+/*conteudo*/
+article{
+    margin-top: 100px;
+    
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    color: #99ffcc;
+}
+.titulo{
+    display: flex;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #ffe066;
+}
+
+/*primeira linha*/
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    top: 0;
+    left: 0;
+    max-width: 1050px;
+    min-width: 320px;
+    top: 25%;
+}
+
+.caixa{
+    width: 300px;
+}
+
+.botao1{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffe066;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border: 2px solid #99ffcc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao1::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: #99ffcc;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.botao1:hover:before{
+    width: 100%;
+}
+
+
+.botao2{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffe066;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border: 2px solid #99ffcc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.botao2:before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #99ffcc;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+}
+.botao2:hover:before{
+    width: 100%;
+}
+
+
+.botao3{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffe066;
+    font-size: 30px;
+    width: 100%;
+    height: 75px;
+    position: relative;
+    border: 2px solid #99ffcc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+}
+.botao3::before{
+    content: "";
+    width: 250%;
+    height: 0%;
+    position: absolute;
+    background-color: #99ffcc;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: 0.5s;
+
+}
+.botao3:hover:before{
+   
+    height: 250%;
+ }
+.botao3::after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background-color: #ffe066;
+    z-index: -2;
+    transform: rotate(-45deg);
+    transition: .5s;
+}
+
+.botao3:hover:after{
+    
+    height: 370%;
+}
+
+.botao3:hover{
+    border: 1px solid #ffe680;
+    text-shadow: 1px 2px 1px grey;
+    box-shadow: 0px 0px 5px#ffe680;
+}
+
+/*segunda linha*/
+
+.caixa2{
+    width: 300px;
+    overflow: hidden;
+}
+ .nav2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    top: 0;
+    left: 0;
+    max-width: 1050px;
+    min-width: 320px;
+    top: 25%;
+}
+
+.botao4{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffe066;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border: 2px solid #99ffcc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+}
+.botao4:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #99ffcc;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+}
+.botao4:hover::before{
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.botao5{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffe066;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border: 2px solid #99ffcc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+}
+.botao5:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #99ffcc;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 250ms ease-in ;
+}
+.botao5:hover:before{
+    transform-origin: top;
+    transform: scaleY(1);
+}
+
+.botao6{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffe066;
+    font-size: 30px;
+    position: relative;
+    max-width: 100%;
+    height: 75px;
+    border: 1px solid #99ffcc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+}
+.botao6 span{
+    position: relative;
+    z-index: 3;
+}
+.botao6:before{
+    content: "";
+    width: 300px;
+    height: calc(100% - 12px);
+    position: absolute;
+    top: 6px;
+    right: -1px;
+    transition: transform .5s ease-in-out;
+    transform: scaleY(1);
+    background-color: #1a1a1a;
+}
+.botao6:hover:before{
+    transform: scaleY(0);
+}
+.botao6:after{
+    content: "";
+    width: 288px;
+    height: 78px;
+    position: absolute;
+    left: 5px;
+    background-color: #1a1a1a;
+    transition: transform .5s ease-in-out;
+    transform: scaleX(1);
+}
+.botao6:hover:after{
+    transform: scaleX(0);
+}
+ 
+/*terceira linha*/
+.nav3{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    top: 0;
+    left: 0;
+    max-width: 1050px;
+    min-width: 320px;
+    top: 25%;
+}
+.botao7{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffe066;
+    font-size: 30px;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border: 1px solid #99ffcc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transition: .2s;
+    overflow: hidden;
+}
+.botao7:hover{
+    background-color: #99ffcc;
+    box-shadow: 0 0 10px #99ffcc, 0 0 15px #66ffb3, 0 0 30px #00ff80;
+    transition-delay: 1s;
+    font-size: 35px;
+}
+
+.botao7 span{
+    display: block;
+    position: absolute;
+}
+
+.span1{
+    width: 100%;
+    height: 3px;
+    top: 0px;
+    left: -100%;
+    background: linear-gradient(90deg,  transparent, #66ffb3);
+    box-shadow: 0 0 18px #00ff80;
+}
+.botao7:hover .span1{
+    left: 100%;
+    transition: .75s;
+}
+
+.span2{
+    width: 3px;
+    height: 100%;
+    top: -100%;
+    right: -1px;
+    background: linear-gradient(180deg, transparent, #66ffb3);
+    box-shadow: 0 0 30px #00ff80;
+}
+.botao7:hover .span2{
+    top: 100px;
+    transition: 1s;
+    transition-delay: .25s;
+}
+
+.span3{
+    width: 100%;
+    height: 3px;
+    bottom: -1px;
+    right: -100%;
+    background: linear-gradient(270deg, transparent, #66ffb3);
+    box-shadow: 0 0 30px #00ff80;
+}
+.botao7:hover .span3{
+right: 100%;
+transition: 1s;
+transition-delay: .50s;
+}
+
+.span4{
+    width: 3px;
+    height: 100%;
+    top: 100%;
+    left: 0%;
+    background: linear-gradient(360deg, transparent, #66ffb3);
+    box-shadow: 0 0 30px #00ff80;
+}
+.botao7:hover .span4{
+    top: -100%;
+    transition: 1s;
+    transition-delay: .75s;
+}
+
+footer{
+    
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        margin: auto;
+        top: 0;
+        left: 0;
+        max-width: 1050px;
+        min-width: 320px;
+        top: 25%;
+    
+}
+
+address{
+    color: cornflowerblue;
+    font-size: 15px;
+    opacity: 0.5;
+    margin-right: 5px;
+}
